@@ -63,12 +63,14 @@ public class Main {
         System.out.println("Ethe's salary AFTER update = " + manage.getEmployee(8).getSalary());
         manage.setPositionSalary(); //вызываем метод установки зп работникам в зависимости от должности
         System.out.println("Blooper's salary AFTER update = " + manage.getEmployee(9).getSalary() + "\n");
-
-        System.out.println("-------SHOWS ALL EMPLOYEE WITH THE SAME POSITION-------");
+        System.out.println("-------SHOWS ALL EMPLOYEE WITH THE SAME POSITION-------"); //метод, в который передается позиция и выводятся все сотрудники с указанной должностью
         manage.showPosition("driver");
         System.out.println("-------------------------------------------------------");
         manage.showPosition("engineer");
         System.out.println("-------------------------------------------------------");
         manage.showPosition("firefighter");
+        System.out.println("-------------------------------------------------------" + "\n");
+        System.out.println("-----SHOW ALL EMPLOYEERS WITH THE MIN & MAX SALARY-----" );
+        manage.showSotrudniki(900.00, 1000.00);
     }
 }

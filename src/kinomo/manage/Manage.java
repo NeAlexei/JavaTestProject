@@ -27,10 +27,10 @@ public class Manage {
     //3. Поместить параметр position в какую-либо переменную.
     //4. Сравнить значение этой переменной с необходимыми.
 
-    public Employee[] setPositionSalary() {   //создание метода, который будет устанавливать ЗП в зависимости от должности.
+    public Employee[] setPositionSalary() {         //создание метода, который будет устанавливать ЗП в зависимости от должности.
         for (int i = 0; i < empArr.length; i++) {
 
-            Employee curEmp = empArr[i]; //выбор элемента массива, т.е. выбор i-го работника
+            Employee curEmp = empArr[i];            //выбор элемента массива, т.е. выбор i-го работника
             String jobPosition = curEmp.getPosition(); //получаем должность работника и присваиваем ее переменной position
 
             if ("engineer".equals(jobPosition)) {
@@ -44,7 +44,7 @@ public class Manage {
         return empArr;
     }
 
-    public void showPosition(String position) {       //метод, в который передается позиция и выводятся все сотрудники с указанной должностью
+    public void showPosition(String position) {         //метод, в который передается позиция и выводятся все сотрудники с указанной должностью
         for (int i = 0; i < empArr.length; i++) {
 
             Employee currentEmp = empArr[i];
@@ -52,6 +52,17 @@ public class Manage {
 
             if (position.equals(job)) {
                 System.out.println(currentEmp.getFirstName() + " " + currentEmp.getLastName() + " is " + currentEmp.getPosition());
+            }
+        }
+    }
+
+    public void showSotrudniki(double min, double max ){ //метод, в который передается минимальное и максимальное значение зп и выводятся сотрудники, соответствующие данному диапазону
+        for (int i = 0; i < empArr.length; i++){
+            Employee currentEmp = empArr[i];
+            Double bablo = currentEmp.getSalary();
+
+            if (min<=bablo && max>=bablo){
+                System.out.println(currentEmp.getFirstName() + " " + currentEmp.getLastName() + " is " + currentEmp.getSalary());
             }
         }
     }

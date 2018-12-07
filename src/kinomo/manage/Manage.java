@@ -56,7 +56,7 @@ public class Manage {
         }
     }
 
-    public void showSotrudniki(double min, double max ){ //метод, в который передается минимальное и максимальное значение зп и выводятся сотрудники, соответствующие данному диапазону
+    public void showSotrudniki(double min, double max){    //метод, в который передается минимальное и максимальное значение зп и выводятся сотрудники, соответствующие данному диапазону
         for (int i = 0; i < empArr.length; i++){
             Employee currentEmp = empArr[i];
             Double bablo = currentEmp.getSalary();

@@ -70,7 +70,7 @@ public class Main {
         System.out.println("-------------------------------------------------------");
         manage.showPosition("firefighter");
         System.out.println("-------------------------------------------------------" + "\n");
-        System.out.println("-----SHOW ALL EMPLOYEERS WITH THE MIN & MAX SALARY-----" );
-        manage.showSotrudniki(900.00, 1000.00);
+        System.out.println("-----SHOW ALL EMPLOYEERS WITH THE MIN & MAX SALARY-----");
+        manage.showSotrudniki(700.00, 900.00);
     }
 }
